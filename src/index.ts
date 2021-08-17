@@ -57,7 +57,7 @@ async function derive(myKey: CryptoKey, peerPublicKey: string) {
       namedCurve: 'P-521',
     },
     false,
-    ['deriveKey']
+    []
   );
 
   const sharedKey = await crypto.subtle.deriveKey(
